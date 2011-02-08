@@ -13,6 +13,7 @@ QuickQuranMobile.AppController = M.Controller.extend({
 	init: function() {
 		
 		M.Request.init({
+			// update to full url when deploying on web
 			url: 'quranIndex.json',
 			isJSON: YES,
 			beforeSend: function(req) {

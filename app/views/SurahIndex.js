@@ -8,18 +8,7 @@
 
 QuickQuranMobile.SurahIndex = M.ListItemView.design({
 
-	childViews: 'surahNum surahName audioButton readLink',
-	
-	//display surah number
-	surahNum: M.LabelView.design({
-		computedValue: {
-			valuePattern: '<%= surahNum %>',
-			operation: function(v) {
-				return v + '&#160; - &#160;';
-			}
-		},
-		isInline: YES
-	}),
+	childViews: 'surahName audioButton readLink',
 	
 	//display surah name
 	surahName : M.LabelView.design({

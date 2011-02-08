@@ -15,7 +15,7 @@ QuickQuranMobile.app = M.Application.design({
 			action: 'init'
 		},
 
-		childViews: 'header content',     
+		childViews: 'header content',   
 
 	  	header: M.ToolbarView.design({
 			childViews: 'logo prayerLink',
@@ -44,8 +44,9 @@ QuickQuranMobile.app = M.Application.design({
 			items: '',
 			listItemTemplateView: QuickQuranMobile.SurahIndex,
 			removeItemsOnUpdate: NO,
-			isInset: NO,
+			isInset: YES,
 			isDividedList: YES,
+			isNumberedList: YES,
 			hasSearchBar: YES,
 			usesDefaultSearchBehaviour: YES
 	     	})
