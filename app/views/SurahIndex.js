@@ -2,14 +2,11 @@
 // The M-Project - Mobile HTML5 Application Framework
 // Generated with: Espresso 0.0.7-1
 //
-// Project: QuranApp
+// Project: QuickQuranMobile
 // Page: SurahIndex
 // ==========================================================================
 
-QuranApp.SurahIndex = M.ListItemView.design({
-	
-/* temporarily removing surahNameEng, readOnly
-*/
+QuickQuranMobile.SurahIndex = M.ListItemView.design({
 
 	childViews: 'surahNum surahName audioButton readLink',
 	

@@ -2,30 +2,29 @@
 // The M-Project - Mobile HTML5 Application Framework
 // Generated with: Espresso 0.0.7-1
 //
-// Project: QuranApp 
+// Project: QuickQuranMobile 
 // ==========================================================================
 
-var QuranApp  = QuranApp || {};
+var QuickQuranMobile  = QuickQuranMobile || {};
 
-QuranApp.app = M.Application.design({
+QuickQuranMobile.app = M.Application.design({
 
 	page1: M.PageView.design({
 		onLoad: {
-			target: QuranApp.AppController,
+			target: QuickQuranMobile.AppController,
 			action: 'init'
 		},
 
 		childViews: 'header content',     
 
 	  	header: M.ToolbarView.design({
-			childViews: 'title prayerLink',
+			childViews: 'logo prayerLink',
 			
-			title: M.LabelView.design({
-				value: 'QuickQuran',
+			logo: M.ImageView.design({
+				value: 'theme/images/logo.png',
 				anchorLocation: M.CENTER,
-				cssClass: 'title'
+				cssClass: 'logo'
 			}),
-			
 			
 			prayerLink: M.LabelView.design({
 				value: 'Prayer Times',
@@ -34,20 +33,16 @@ QuranApp.app = M.Application.design({
 				anchorLocation: M.RIGHT,
 				cssClass: 'prayerTimes'
 			}),
-			
 			anchorLocation: M.TOP
-			
 	  	}),
 
 		content: M.ScrollView.design({
 	      childViews: 'surahIndex',
 
 	      	surahIndex: M.ListView.design({
-			contentBinding: 'QuranApp.AppController.surahsList',
+			contentBinding: 'QuickQuranMobile.AppController.surahsList',
 			items: '',
-			listItemTemplateView: QuranApp.SurahIndex,
-			target: QuranApp.AppController,
-			action: 'alert',
+			listItemTemplateView: QuickQuranMobile.SurahIndex,
 			removeItemsOnUpdate: NO,
 			isInset: NO,
 			isDividedList: YES,

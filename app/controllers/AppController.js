@@ -2,11 +2,11 @@
 // The M-Project - Mobile HTML5 Application Framework
 // Generated with: Espresso 0.0.7-1
 //
-// Project: QuranApp
+// Project: QuickQuranMobile
 // Controller: AppController
 // ==========================================================================
 
-QuranApp.AppController = M.Controller.extend({
+QuickQuranMobile.AppController = M.Controller.extend({
 
 	surahsList: null,
 		
@@ -19,7 +19,7 @@ QuranApp.AppController = M.Controller.extend({
 				//...
 			},
 			onSuccess: function(data){
-				QuranApp.AppController.set('surahsList', data);
+				QuickQuranMobile.AppController.set('surahsList', data);
 			},
 			onError: function(request, message){
 				console.log(message);

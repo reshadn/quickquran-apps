@@ -1,6 +1,6 @@
 {
-    "name" : "QuranApp",
-    "version": "v0.0.1",
+    "name" : "QuickQuranMobile",
+    "version": "v0.1.0",
     "minify": false,
     "proxies":[
                 { "host":"your.server.com", "proxyAlias": "myServer", "requestMethod": "GET", "hostPort": "80" }
