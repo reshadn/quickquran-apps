@@ -8,18 +8,17 @@
 
 QuranApp.SurahIndex = M.ListItemView.design({
 	
-/* temporarily removing surahNameEng, readOnly and audioLink
-	childViews: 'surahNum surahName surahNameEng readOnly audioLink readLink',
+/* temporarily removing surahNameEng, readOnly
 */
 
-	childViews: 'surahNum surahName readLink',
+	childViews: 'surahNum surahName audioButton readLink',
 	
 	//display surah number
 	surahNum: M.LabelView.design({
 		computedValue: {
 			valuePattern: '<%= surahNum %>',
 			operation: function(v) {
-				return '<a href="#">' + v + '</a>&#160; - &#160;';
+				return v + '&#160; - &#160;';
 			}
 		},
 		isInline: YES
@@ -30,14 +29,14 @@ QuranApp.SurahIndex = M.ListItemView.design({
 		computedValue: {
             valuePattern: '<%= surahName %>',
             operation: function(v) {
-                return '<a href="#">' + v + '</a>&#160;';
+                return v + '&#160;&#160;&#160;&#160;';
             }
         },		
 		isInline: YES,
 		cssClass: 'surahName'
 	}),
 
-/*	
+/* temporarily removed	
 	//display surah english name
 	surahNameEng : M.LabelView.design({
 		computedValue: {
@@ -49,39 +48,27 @@ QuranApp.SurahIndex = M.ListItemView.design({
 		isInline: YES,
 		cssClass: 'surahNameEng'
 	}),
-		
-	// testing read-only button, use method from controller
-	// launch new view (page) with just 1 image
-	readOnly: M.ButtonView.design({
-		value: 'Read Only',
-		target:
-		action:
-		isInline: YES	
-	}),	
-	
-//temporarily removing audio "Play" link	
-	audioLink: M.LabelView.design({
+*/		
+
+	audioButton: M.LabelView.design({
 		computedValue: {
 			valuePattern: '<%= audioURL %>',
-			operation: function(v, label) {
-				return '<a href="' + v + '">Play</a>';
+			operation: function(v) {
+				return '<a href="' + v + '">Click here to play audio</a>';
 			}
 		},
 		isInline: YES
 	}),
-*/
 
 	// read text and play audio through Quran.com
-	// set up entire listItem as link
-	// add page transition
 	readLink: M.LabelView.design({
 		computedValue: {
 			valuePattern: '<%= readURL %>',
-			operation: function(v, label) {
+			operation: function(v) {
 				return '<a href="' + v + '">Read</a>';
 			}
 		},
-		isInline: YES
+		isInline: NO
 	})
 	
 });

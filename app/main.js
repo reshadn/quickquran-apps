@@ -42,10 +42,12 @@ QuranApp.app = M.Application.design({
 		content: M.ScrollView.design({
 	      childViews: 'surahIndex',
 
-	      surahIndex: M.ListView.design({
+	      	surahIndex: M.ListView.design({
 			contentBinding: 'QuranApp.AppController.surahsList',
 			items: '',
 			listItemTemplateView: QuranApp.SurahIndex,
+			target: QuranApp.AppController,
+			action: 'alert',
 			removeItemsOnUpdate: NO,
 			isInset: NO,
 			isDividedList: YES,
