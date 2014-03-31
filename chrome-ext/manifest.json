@@ -3,12 +3,12 @@
 
   "name": "QuickQuran",
   "description": "This extension loads up links to Quranic Audio hosted on http://quranicaudio.com",
-  "version": "0.5.4",
+  "version": "0.9.0",
 
   "permissions": [
   ],
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "img/icon.png",
     "default_popup": "popup.html"
   }
 }
