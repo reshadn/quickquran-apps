@@ -3,7 +3,7 @@
 
   "name": "QuickQuran",
   "description": "This extension loads up links to Quranic Audio hosted on http://quranicaudio.com",
-  "version": "1.0",
+  "version": "0.5.4",
 
   "permissions": [
   ],
