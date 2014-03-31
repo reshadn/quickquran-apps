@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "QuickQuran",
+  "description": "This extension loads up links to Quranic Audio hosted on http://quranicaudio.com",
+  "version": "1.0",
+
+  "permissions": [
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
