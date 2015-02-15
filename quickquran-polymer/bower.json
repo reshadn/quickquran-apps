@@ -1,0 +1,29 @@
+{
+  "name": "QuickQuran",
+  "version": "0.6",
+  "homepage": "https://github.com/reshadn/QuickQuranExt",
+  "authors": [
+    "Reshad Noorzay <rnoorzay@gmail.com>"
+  ],
+  "description": "Quick reference to read, listen and study the Quran.",
+  "main": "popup.html",
+  "keywords": [
+    "quran",
+    "islam"
+  ],
+  "license": "none",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.1",
+    "core-icons": "Polymer/core-icons#~0.5.1",
+    "paper-elements": "Polymer/paper-elements#~0.5.1",
+    "paper-dropdown-menu": "Polymer/paper-dropdown-menu#~0.5.1"
+  }
+}
